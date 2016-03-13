@@ -3,7 +3,7 @@
   <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" remote="aosp" />
   <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" remote="aosp" />
   <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" remote="aosp" />
-  <remove-project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" remote="aosp" />
+  <!-- <remove-project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" remote="aosp" /> -->
   <remove-project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" remote="aosp" />
   <remove-project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" remote="aosp" />
   <remove-project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" remote="aosp" />
@@ -12,14 +12,14 @@
   <remove-project groups="intel" name="platform/hardware/intel/bootstub" path="hardware/intel/bootstub" remote="aosp" />
   <remove-project groups="intel" name="platform/hardware/intel/common/bd_prov" path="hardware/intel/common/bd_prov" remote="aosp" />
   <remove-project groups="intel" name="platform/hardware/intel/common/libstagefrighthw" path="hardware/intel/common/libstagefrighthw" remote="aosp" />
-  <remove-project groups="intel" name="platform/hardware/intel/common/libva" path="hardware/intel/common/libva" remote="aosp" />
-  <remove-project groups="intel" name="platform/hardware/intel/common/libwsbm" path="hardware/intel/common/libwsbm" remote="aosp" />
-  <remove-project groups="intel" name="platform/hardware/intel/common/omx-components" path="hardware/intel/common/omx-components" remote="aosp" />
+  <remove-project path="hardware/intel/common/libva" name="CyanogenMod/android_hardware_intel_common_libva" groups="intel" />
+  <remove-project path="hardware/intel/common/omx-components" name="CyanogenMod/android_hardware_intel_common_omx-components" groups="intel" />
   <remove-project groups="intel" name="platform/hardware/intel/common/utils" path="hardware/intel/common/utils" remote="aosp" />
   <remove-project groups="intel" name="platform/hardware/intel/common/wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core" remote="aosp" />
-  <remove-project groups="intel" name="platform/hardware/intel/img/psb_headers" path="hardware/intel/img/psb_headers" remote="aosp" />
-  <remove-project groups="intel" name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video" remote="aosp" />
+  <remove-project path="hardware/intel/img/psb_headers" name="CyanogenMod/android_hardware_intel_img_psb_headers" groups="intel" />
   <remove-project groups="intel_sensors" name="platform/hardware/intel/sensors" path="hardware/intel/sensors" remote="aosp" />
+  <remove-project path="hardware/intel/common/libwsbm" name="CyanogenMod/android_hardware_intel_common_libwsbm" groups="intel" />
+  <remove-project path="hardware/intel/img/psb_video" name="CyanogenMod/android_hardware_intel_img_psb_video" groups="intel" />
   <project name="CyanogenMod/android_device_motorola_falcon" path="device/motorola/falcon" remote="github" />
   <project name="CyanogenMod/android_device_motorola_msm8226-common" path="device/motorola/msm8226-common" remote="github" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
@@ -30,13 +30,14 @@
   <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" />
-  <project name="kundancool/android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="github" />
+  <!-- <project name="kundancool/android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="github" /> -->
   <project name="kundancool/android_kernel_xiaomi_msm8974" path="kernel/xiaomi/msm8974" remote="github" />
-  <project name="kundancool/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" />
+  <!-- <project name="kundancool/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" /> -->
   <remove-project name="CyanogenMod/android_bootable_recovery" />
-  <project name="omnirom/android_bootable_recovery" path="bootable/recovery" remote="github" revision="android-5.1" />
+  <project name="kundancool/android_bootable_recovery" path="bootable/recovery" remote="github" revision="android-6.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" />
   <project name="CyanogenMod/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" />
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
   <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
-  <project name="CyanogenMod/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" />
+  <project name="CyanogenMod/android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="github" />  
 </manifest>
